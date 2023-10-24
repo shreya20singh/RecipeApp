@@ -11,7 +11,8 @@ import SwiftUI
 struct RecipeAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let viewModel = MealsViewModel(fetchService: FetchDessertDataService())
+            HomeView(viewModel: viewModel)
         }
     }
 }
