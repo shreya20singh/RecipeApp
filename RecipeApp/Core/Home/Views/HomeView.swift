@@ -12,9 +12,9 @@ struct HomeView: View {
 
     var body: some View {
         NavigationView {
-            ScrollView(showsIndicators: false) {
+            ScrollView {
                 LazyVStack {
-                    ForEach($viewModel.meals) { $meal in
+                    ForEach(viewModel.searchText.isEmpty ? viewModel.meals : viewModel.filteredMeals) { meal in
                         MealCellView(meal: meal)
                     }
                 }
@@ -22,34 +22,12 @@ struct HomeView: View {
             .padding()
             .refreshable {
                 Task {
-                    do {
-                        await viewModel.fetchMeals()
-                    } catch {
-                        viewModel.isShowingErrorAlert = true
-                        viewModel.errorAlertMessage = "Failed to refresh meals: \(error.localizedDescription)"
-                    }
+                    viewModel.fetchMeals()
                 }
             }
             .navigationTitle("Recipes")
             .navigationBarTitleDisplayMode(.inline)
-        }
-        .searchable(text: $viewModel.searchText, prompt: "Search")
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button {
-                    Task {
-                        do {
-                            await viewModel.fetchMeals()
-                        } catch {
-                            viewModel.isShowingErrorAlert = true
-                            viewModel.errorAlertMessage = "Failed to fetch meals: \(error.localizedDescription)"
-                        }
-                    }
-                } label: {
-                    Image(systemName: "arrow.counterclockwise")
-                        .foregroundColor(.black)
-                }
-            }
+            .searchable(text: $viewModel.searchText, prompt: "Search")
         }
         .alert(isPresented: $viewModel.isShowingErrorAlert) {
             Alert(
@@ -57,6 +35,9 @@ struct HomeView: View {
                 message: Text(viewModel.errorAlertMessage),
                 dismissButton: .default(Text("OK"))
             )
+        }
+        .onChange(of: viewModel.searchText) {
+                    viewModel.filterMeals()
         }
     }
 }

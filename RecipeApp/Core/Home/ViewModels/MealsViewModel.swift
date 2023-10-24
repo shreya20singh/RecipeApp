@@ -9,6 +9,7 @@ import Foundation
 
 class MealsViewModel: ObservableObject {
     @Published var meals: [Meal] = []
+    @Published var filteredMeals: [Meal] = []
     @Published var isShowingErrorAlert = false
     @Published var errorAlertMessage = ""
     @Published var searchText = ""
@@ -37,15 +38,16 @@ class MealsViewModel: ObservableObject {
             }
         }
     }
-    
-    var filteredMeals: [Meal] {
+
+    func filterMeals() {
         if searchText.isEmpty {
-            return meals
+            filteredMeals = meals
         } else {
-            return meals.filter { meal in
+            filteredMeals = meals.filter { meal in
                 return meal.name.lowercased().contains(searchText.lowercased())
             }
         }
     }
+
 }
 

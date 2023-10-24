@@ -20,14 +20,15 @@ struct MealCellView: View {
                 .fontWeight(.bold)
                 .padding(.vertical, 8)
                 .padding(.horizontal, 16)
-                .background(.gray)
+                .background(.black)
+                .opacity(0.8)
                 .foregroundColor(.white)
                 .cornerRadius(10)
         }
         .padding()
         .background(Color.white)
         .cornerRadius(10)
-        .shadow(radius: 5) 
+        .shadow(radius: 2) 
     }
 }
 
