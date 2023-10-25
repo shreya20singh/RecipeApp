@@ -10,9 +10,18 @@ import WebKit
 
 struct YouTubeView: View {
     let videoURL: URL
+    @State private var isLoading = true
 
     var body: some View {
-        WebView(url: videoURL)
+        ZStack {
+            if isLoading {
+                ProgressView()
+            }
+            WebView(url: videoURL)
+                .onAppear {
+                    isLoading = false
+                }
+        }
     }
 }
 

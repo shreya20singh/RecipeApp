@@ -10,6 +10,7 @@ import AVKit
 
 struct RecipeView: View {
     @ObservedObject var viewModel: RecipeViewModel
+    @State private var showFullInstructions = false
     
     init(viewModel: RecipeViewModel) {
         self.viewModel = viewModel
@@ -58,8 +59,20 @@ struct RecipeView: View {
                 }
                 
                 CenteredTitleView(title: "Instructions:", font: .headline, fontWeight: .semibold)
-                Text(viewModel.recipe?.instructions ?? "")
-                    .font(.body)
+                    if let instructions = viewModel.recipe?.instructions {
+                        Text(showFullInstructions ? instructions : String(instructions.prefix(200)) + "...")
+                            .font(.body)
+                    }
+                if let instructions = viewModel.recipe?.instructions, instructions.count > 200 {
+                    Button(action: {
+                        showFullInstructions.toggle()
+                    }) {
+                        Text(showFullInstructions ? "Read Less" : "Read More")
+                            .font(.subheadline)
+                            .foregroundColor(.blue)
+                    }
+                }
+
                 
                 CenteredTitleView(title: "Ingredients:", font: .headline, fontWeight: .semibold)
                 if let ingredients = viewModel.recipe?.ingredients, let measurements = viewModel.recipe?.measurements {
