@@ -42,7 +42,7 @@ Recipe App is a mobile application that allows users to explore and discover a w
 ## Screenshots
 <img src="[https://your-image-url.type](https://github.com/shreya20singh/RecipeApp/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202023-10-25%20at%2011.55.34.png)" width="200" height="400">
 
-![Alt text](https://github.com/shreya20singh/RecipeApp/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202023-10-25%20at%2011.55.34.png =250x400 "Home View")
+![Alt text](https://github.com/shreya20singh/RecipeApp/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202023-10-25%20at%2011.55.34.png "Home View"  | width=100)
 
 ![Alt text](https://github.com/shreya20singh/RecipeApp/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202023-10-25%20at%2011.55.47.png =250x400 "Saerch View")
 
