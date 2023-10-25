@@ -17,11 +17,12 @@ Recipe App is a mobile application that allows users to explore and discover a w
 ### Video Integration
 - Watch video tutorials for specific recipes via integrated YouTube videos.
 
-### Categorization and Tags
+### Categorization and Tags and Source Information
 - Recipes are categorized and tagged, making it easy to find dishes based on your preferences.
-
-### Source Information
 - Access the source of the recipe for additional details.
+
+### App performance
+- The API responses are cached for better app performance.
 
 ### User Interaction
 - Pull to refresh the recipe listings for the latest and most up-to-date results.
