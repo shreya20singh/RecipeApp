@@ -9,9 +9,10 @@ import Foundation
 
 class FetchDessertDataService {
     private let cache = URLCache.shared
+    var url = "https://themealdb.com/api/json/v1/1/filter.php?c=Dessert"
     
     func fetchData() async throws -> [Meal] {
-        guard let url = URL(string: "https://themealdb.com/api/json/v1/1/filter.php?c=Dessert") else {
+        guard let url = URL(string: url) else {
             throw APIError.invalidURL
         }
         

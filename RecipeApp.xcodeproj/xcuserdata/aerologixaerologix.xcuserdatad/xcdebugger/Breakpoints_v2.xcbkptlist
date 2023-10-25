@@ -14,8 +14,8 @@
             filePath = "RecipeApp/Core/Home/Services/FetchDessertDataService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "fetchData()"
             landmarkType = "7">
             <Locations>
@@ -152,8 +152,8 @@
             filePath = "RecipeApp/Core/Home/Services/FetchDessertDataService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "fetchData()"
             landmarkType = "7">
          </BreakpointContent>
