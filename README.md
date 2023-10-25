@@ -40,17 +40,12 @@ Recipe App is a mobile application that allows users to explore and discover a w
 
 
 ## Screenshots
-<img src="https://github.com/shreya20singh/RecipeApp/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202023-10-25%20at%2011.55.34.png" width="200" height="400">
+<img src="https://github.com/shreya20singh/RecipeApp/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202023-10-25%20at%2011.55.34.png" width="250" height="400">
 
-![Alt text](https://github.com/shreya20singh/RecipeApp/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202023-10-25%20at%2011.55.34.png | width=100)
-
-![Alt text](https://github.com/shreya20singh/RecipeApp/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202023-10-25%20at%2011.55.47.png =250x400 "Saerch View")
-
-![Alt text](https://github.com/shreya20singh/RecipeApp/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202023-10-25%20at%2011.55.08.png =250x400 "Recipe View")
-
-![Alt text](https://github.com/shreya20singh/RecipeApp/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202023-10-25%20at%2011.55.17.png =250x400 "Recipe View")
-
-![Alt text](https://github.com/shreya20singh/RecipeApp/blob/main/Screenshots/Screenshot%202023-10-25%20at%2012.54.34.png =250x400 "Test Coverage")
+<img src="https://github.com/shreya20singh/RecipeApp/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202023-10-25%20at%2011.55.47.png" width="250" height="400">
+<img src="https://github.com/shreya20singh/RecipeApp/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202023-10-25%20at%2011.55.08.png" width="250" height="400">
+<img src="https://github.com/shreya20singh/RecipeApp/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202023-10-25%20at%2011.55.17.png " width="250" height="400">
+<img src="https://github.com/shreya20singh/RecipeApp/blob/main/Screenshots/Screenshot%202023-10-25%20at%2012.54.34.png" width="500" height="200">
 
 
 ## Built With
