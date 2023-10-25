@@ -79,6 +79,66 @@
                   endingLineNumber = "18"
                   offsetFromSymbolStart = "28">
                </Location>
+               <Location
+                  uuid = "D6A3AF8B-B79F-448D-9F3E-49AA04079D54 - 1315ca69de619887"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for RecipeApp.FetchDessertDataService.fetchData() async throws -&gt; Swift.Array&lt;RecipeApp.Meal&gt;"
+                  moduleName = "RecipeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aerologixaerologix/Downloads/RecipeApp/RecipeApp/Core/Home/Services/FetchDessertDataService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "1239">
+               </Location>
+               <Location
+                  uuid = "D6A3AF8B-B79F-448D-9F3E-49AA04079D54 - 804b7b47bf7ead6b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for RecipeApp.FetchDessertDataService.fetchData() async throws -&gt; Swift.Array&lt;RecipeApp.Meal&gt;"
+                  moduleName = "RecipeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aerologixaerologix/Downloads/RecipeApp/RecipeApp/Core/Home/Services/FetchDessertDataService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "D6A3AF8B-B79F-448D-9F3E-49AA04079D54 - aa32dff3d1d5ac99"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for RecipeApp.FetchDessertDataService.fetchData() async throws -&gt; Swift.Array&lt;RecipeApp.Meal&gt;"
+                  moduleName = "RecipeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aerologixaerologix/Downloads/RecipeApp/RecipeApp/Core/Home/Services/FetchDessertDataService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "127">
+               </Location>
+               <Location
+                  uuid = "D6A3AF8B-B79F-448D-9F3E-49AA04079D54 - e9ac59c8e813ca9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for RecipeApp.FetchDessertDataService.fetchData() async throws -&gt; Swift.Array&lt;RecipeApp.Meal&gt;"
+                  moduleName = "RecipeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aerologixaerologix/Downloads/RecipeApp/RecipeApp/Core/Home/Services/FetchDessertDataService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "28">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -143,6 +203,21 @@
                   endingLineNumber = "26"
                   offsetFromSymbolStart = "45">
                </Location>
+               <Location
+                  uuid = "C56B137D-A978-46B4-A6CD-3C716E94BB89 - dfbffcd9ffe104ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in RecipeApp.MealsViewModel.fetchMeals() -&gt; ()"
+                  moduleName = "RecipeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aerologixaerologix/Downloads/RecipeApp/RecipeApp/Core/Home/ViewModels/MealsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "279">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -160,6 +235,68 @@
             endingLineNumber = "27"
             landmarkName = "fetchMeals()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3192A92C-C55C-40DE-BFDE-9B7C2C888008 - 94694bc65106c0ce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in RecipeApp.MealsViewModel.fetchMeals() -&gt; ()"
+                  moduleName = "RecipeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aerologixaerologix/Downloads/RecipeApp/RecipeApp/Core/Home/ViewModels/MealsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "85">
+               </Location>
+               <Location
+                  uuid = "3192A92C-C55C-40DE-BFDE-9B7C2C888008 - 971ad71b31ef2fa7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in RecipeApp.MealsViewModel.fetchMeals() -&gt; ()"
+                  moduleName = "RecipeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aerologixaerologix/Downloads/RecipeApp/RecipeApp/Core/Home/ViewModels/MealsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "3192A92C-C55C-40DE-BFDE-9B7C2C888008 - dfbffcd9ffe104cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in RecipeApp.MealsViewModel.fetchMeals() -&gt; ()"
+                  moduleName = "RecipeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aerologixaerologix/Downloads/RecipeApp/RecipeApp/Core/Home/ViewModels/MealsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "3192A92C-C55C-40DE-BFDE-9B7C2C888008 - 84e4a8234ccceacb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in RecipeApp.MealsViewModel.fetchMeals() -&gt; ()"
+                  moduleName = "RecipeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aerologixaerologix/Downloads/RecipeApp/RecipeApp/Core/Home/ViewModels/MealsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "162">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -223,7 +360,86 @@
                   endingLineNumber = "36"
                   offsetFromSymbolStart = "550">
                </Location>
+               <Location
+                  uuid = "8AA99501-0F10-46E2-942B-9BBC9DB1766F - 36878a9482789f93"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Swift.MainActor @Sendable () -&gt; () in closure #1 @Sendable () async -&gt; () in RecipeApp.MealsViewModel.fetchMeals() -&gt; ()"
+                  moduleName = "RecipeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aerologixaerologix/Downloads/RecipeApp/RecipeApp/Core/Home/ViewModels/MealsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "1030">
+               </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D58E1027-515F-4569-9443-D7E003BC5320"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RecipeApp/Core/Recipe/ViewModels/RecipeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "fetchRecipeDetails()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D58E1027-515F-4569-9443-D7E003BC5320 - eec811262ad21841"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RecipeApp.RecipeViewModel.fetchRecipeDetails() async -&gt; ()"
+                  moduleName = "RecipeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aerologixaerologix/Downloads/RecipeApp/RecipeApp/Core/Recipe/ViewModels/RecipeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "158">
+               </Location>
+               <Location
+                  uuid = "D58E1027-515F-4569-9443-D7E003BC5320 - f4689092b380f8d9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for RecipeApp.RecipeViewModel.fetchRecipeDetails() async -&gt; ()"
+                  moduleName = "RecipeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aerologixaerologix/Downloads/RecipeApp/RecipeApp/Core/Recipe/ViewModels/RecipeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "47">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BC26FDA2-2D50-4515-ABC8-C906ED9F5D5B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RecipeApp/Core/Recipe/ViewModels/RecipeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "fetchRecipeDetails()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

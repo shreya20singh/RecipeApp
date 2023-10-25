@@ -9,13 +9,23 @@ import SwiftUI
 
 struct HomeView: View {
     @ObservedObject var viewModel: MealsViewModel
+    @State var selectedMealID: String?
 
     var body: some View {
         NavigationView {
             ScrollView {
                 LazyVStack {
                     ForEach(viewModel.searchText.isEmpty ? viewModel.meals : viewModel.filteredMeals) { meal in
-                        MealCellView(meal: meal)
+                        NavigationLink(
+                            destination: RecipeView(viewModel: RecipeViewModel(mealID: meal.id)), // Pass the mealID
+                            tag: meal.id,
+                            selection: $selectedMealID
+                        ) {
+                            MealCellView(meal: meal)
+                        }
+                        .onTapGesture {
+                            selectedMealID = meal.id
+                        }
                     }
                 }
             }
@@ -43,5 +53,5 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView(viewModel: MealsViewModel(fetchService: FetchDessertDataService()))
+    HomeView(viewModel: MealsViewModel(fetchService: FetchDessertDataService()), selectedMealID: "")
 }
