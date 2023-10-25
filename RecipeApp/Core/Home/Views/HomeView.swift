@@ -37,7 +37,7 @@ struct HomeView: View {
             }
             .navigationTitle("Recipes")
             .navigationBarTitleDisplayMode(.inline)
-            .searchable(text: $viewModel.searchText, prompt: "Search")
+            .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search")
         }
         .alert(isPresented: $viewModel.isShowingErrorAlert) {
             Alert(
