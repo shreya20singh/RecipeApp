@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct RecipeView: View {
     @ObservedObject var viewModel: RecipeViewModel
@@ -16,60 +17,59 @@ struct RecipeView: View {
     
     var body: some View {
         ScrollView {
-            VStack {
-                if let recipe = viewModel.recipe {
-                    Text(recipe.mealName)
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .padding()
+            VStack(alignment: .leading, spacing: 10) {
+                MealImageView(url: viewModel.recipe?.imageURL?.absoluteString ?? "")
+                
+                CenteredTitleView(title: viewModel.recipe?.mealName ?? "", font: .title, fontWeight: .bold)
+                
+                HStack {
+                   Text("Area: \(viewModel.recipe?.area ?? "")")
+                    Spacer()
+                   if let sourceURLString = viewModel.recipe?.sourceURL, !sourceURLString.isEmpty,
+                      let sourceURL = URL(string: sourceURLString) {
+                       Link("Source", destination: sourceURL)
+                   }
+                    Spacer()
+                    Text("Category: \(viewModel.recipe?.category ?? "")")
+               }
+               .font(.subheadline)
+                
+                HStack {
                     
-                    Text("Category: \(recipe.category ?? "")")
-                        .font(.headline)
-                        .padding()
-                    
-                    Text("Area: \(recipe.area ?? "")")
-                        .font(.headline)
-                        .padding()
-                    
-                    if let tags = recipe.tags {
-                        Text("Tags: \(tags)")
-                            .font(.headline)
-                            .padding()
-                    }
-                    
-                    Text("Instructions:")
-                        .font(.headline)
-                        .padding()
-                    
-                    Text(recipe.instructions)
-                        .font(.body)
-                        .padding()
-                    
-                    Text("Ingredients:")
-                        .font(.headline)
-                        .padding()
-                    
-                    if let ingredients = recipe.ingredients, let measurements = recipe.measurements {
-                        ForEach(0..<min(ingredients.count, measurements.count), id: \.self) { index in
-                            Text("\(ingredients[index]): \(measurements[index])")
-                                .font(.body)
-                                .padding()
+                    if let tags = viewModel.recipe?.tags, !tags.isEmpty {
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack {
+                                ForEach(tags.components(separatedBy: ","), id: \.self) { tag in
+                                    Text(tag.trimmingCharacters(in: .whitespacesAndNewlines))
+                                        .padding(5)
+                                        .background(Color.gray.opacity(0.5))
+                                        .cornerRadius(10)
+                                }
+                            }
                         }
                     }
-                    
-                    if let sourceURL = URL(string: recipe.sourceURL ?? ""), sourceURL.absoluteString != "" {
-                        Link("Source", destination: sourceURL)
-                            .font(.headline)
-                            .padding()
-                    }
-                    
-                    if let youtubeURL = URL(string: recipe.youtubeLink ?? ""), youtubeURL.absoluteString != "" {
-                        Link("YouTube Video", destination: youtubeURL)
-                            .font(.headline)
-                            .padding()
+                }
+                .font(.subheadline)
+                
+                if let youtubeURL = URL(string: viewModel.recipe?.youtubeLink ?? ""), youtubeURL.absoluteString != "" {
+                    YouTubeView(videoURL: youtubeURL)
+                        .frame(height: 300)
+                        .cornerRadius(3.0)
+                }
+                
+                CenteredTitleView(title: "Instructions:", font: .headline, fontWeight: .semibold)
+                Text(viewModel.recipe?.instructions ?? "")
+                    .font(.body)
+                
+                CenteredTitleView(title: "Ingredients:", font: .headline, fontWeight: .semibold)
+                if let ingredients = viewModel.recipe?.ingredients, let measurements = viewModel.recipe?.measurements {
+                    ForEach(0..<min(ingredients.count, measurements.count), id: \.self) { index in
+                        Text("\(ingredients[index]): \(measurements[index])")
+                            .font(.body)
                     }
                 }
             }
+            .padding()
         }
         .task {
             await viewModel.fetchRecipeDetails()
@@ -81,7 +81,7 @@ struct RecipeView: View {
 struct RecipeView_Previews: PreviewProvider {
     static var previews: some View {
         let viewModel = RecipeViewModel(mealID: "52768")
-        viewModel.mealId = "52768" // Provide a default mealID for the preview
+        viewModel.mealId = "52768"
         return RecipeView(viewModel: viewModel)
     }
 }

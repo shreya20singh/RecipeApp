@@ -9,10 +9,10 @@ import SwiftUI
 import Kingfisher
 
 struct MealImageView: View {
-    let meal: Meal
+    let url: String?
 
     var body: some View {
-        KFImage(URL(string: meal.image ?? "fork.knife.circle.fill"))
+        KFImage(URL(string: url ?? "fork.knife.circle.fill"))
             .placeholder {
                 ProgressView()
             }
@@ -20,11 +20,12 @@ struct MealImageView: View {
             .scaledToFit()
             .clipShape(Rectangle())
             .cornerRadius(7)
+            .opacity(0.9)
     }
 }
 
 
 
 #Preview {
-    MealImageView(meal:Meal(name: "1", image: "https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg", id: "sample-image-url"))
+    MealImageView(url: "https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg")
 }

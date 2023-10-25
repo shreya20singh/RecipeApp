@@ -11,7 +11,7 @@ struct MealCellView: View {
     let meal: Meal
     var body: some View {
         VStack {
-            MealImageView(meal: meal)
+            MealImageView(url: meal.image)
                 .background(Color.gray.opacity(0.3))
                 .cornerRadius(10)
 
